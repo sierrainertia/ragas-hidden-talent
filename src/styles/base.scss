@@ -1,0 +1,59 @@
+//   Quote design
+blockquote {
+  margin-top: 50px;
+  width: 500px;
+  color: white;
+  padding: 0.5em 10px;
+  font-size: 2.5rem;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-family: $headerFont;
+}
+
+blockquote:before {
+  color: white;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  color: $grey;
+  font-size: 1.3rem;
+}
+
+body {
+  display: flex;
+  background-color: $black;
+  color: white;
+  font-family: $bodyFont;
+}
+
+// *************
+// typography
+// *************
+h1 {
+  font-size: 2.5rem;
+  font-family: $headerFont;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: $headerFont;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+li,
+a,
+button {
+  color: $grey;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.3rem;
+  color: $grey;
+}
