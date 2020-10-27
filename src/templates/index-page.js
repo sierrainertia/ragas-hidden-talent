@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import "./index-page.scss";
 
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import { Menu } from "../components/menu";
+import { Hero } from "../components/hero";
 
 export const IndexPageTemplate = ({
   image,
@@ -20,7 +21,7 @@ export const IndexPageTemplate = ({
 
     <section className="rightSection">
       <main>
-        <section className="hero"></section>
+        <Hero />
         <section className="about">
           <blockquote>
             Taking an image, freezing a moment, reveals how rich reality truly
@@ -70,6 +71,17 @@ export const IndexPageTemplate = ({
         </section>
       </main>
     </section>
+    {/* <div>
+      Icons made by{" "}
+      <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+        Freepik
+      </a>{" "}
+      from{" "}
+      <a href="https://www.flaticon.com/" title="Flaticon">
+        {" "}
+        www.flaticon.com
+      </a>
+    </div> */}
   </div>
 );
 
