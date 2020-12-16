@@ -6,6 +6,9 @@ import "./index-page.scss";
 import Layout from "../components/layout";
 import { Menu } from "../components/menu";
 import { Hero } from "../components/hero";
+import { About } from "../components/about";
+import { Gallery } from "../components/gallery";
+import { Contact } from "../components/contact";
 
 export const IndexPageTemplate = ({
   image,
@@ -22,53 +25,12 @@ export const IndexPageTemplate = ({
     <section className="rightSection">
       <main>
         <Hero />
-        <section className="about">
-          <blockquote>
-            Taking an image, freezing a moment, reveals how rich reality truly
-            is.
-            <p>-Anonymous</p>
-          </blockquote>
 
-          <h3>About me</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
-            repellat maiores dolore fuga fugit illo expedita eligendi
-            voluptatibus reprehenderit voluptates suscipit minima, ullam
-            deserunt obcaecati odio officiis porro nostrum necessitatibus.
-          </p>
-        </section>
+        <About />
+        
+        <Gallery />
 
-        <section className="gallery">
-          <img src="http://placekitten.com/300/300" alt="" />
-          <img src="http://placekitten.com/300/300" alt="" />
-          <img src="http://placekitten.com/300/300" alt="" />
-          <img src="http://placekitten.com/300/300" alt="" />
-          <img src="http://placekitten.com/300/300" alt="" />
-          <img src="http://placekitten.com/300/300" alt="" />
-          <img src="http://placekitten.com/300/300" alt="" />
-          <img src="http://placekitten.com/300/300" alt="" />
-          <img src="http://placekitten.com/300/300" alt="" />
-          <img src="http://placekitten.com/300/300" alt="" />
-          <img src="http://placekitten.com/300/300" alt="" />
-          <img src="http://placekitten.com/300/300" alt="" />
-        </section>
-
-        <section className="contact">
-          <h3>Like what you see? Let's Chat!</h3>
-          <form action="submit">
-            <label htmlFor="name">Name</label>
-            <input type="text" placeholder="Name" id="name" />
-            <label htmlFor="email">Email</label>
-            <input type="text" placeholder="Email" id="email" />
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <button>Submit Message</button>
-          </form>
-        </section>
+        <Contact />
       </main>
     </section>
     {/* <div>

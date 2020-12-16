@@ -1,6 +1,9 @@
 import React from "react";
 import "./index.scss";
 
+// import { fa-Envelope } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react=fontawesome";
+
 function Icon() {
   return (
     <svg
@@ -60,7 +63,7 @@ export const Menu = () => {
           </ul>
         </nav>
 
-        <ul className="socials">
+        {/* <ul className="socials">
           <li>
             <a href="">
               <i className="fab fa-instagram" aria-label="instagram link"></i>
@@ -68,10 +71,11 @@ export const Menu = () => {
           </li>
           <li>
             <a href="">
+              <FontAwesomeIcon icon={["far", "fa-envelope"]} />
               <i className="far fa-envelope" aria-label="email link"></i>
             </a>
           </li>
-        </ul>
+        </ul> */}
 
         <p className="createdBy">
           Website created by
